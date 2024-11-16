@@ -1,11 +1,10 @@
 class Control:
     def __init__(self, tv = None):
         self._tv = tv
-        self._tv.control = self
 
     def enlazar(self, tv):
         self._tv = tv
-        tv.setControl(Control)
+        tv.setControl(self)
 
     def setTv(self, tv):
         self._tv = tv

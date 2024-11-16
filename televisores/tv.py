@@ -7,7 +7,7 @@ class TV:
         self._estado = estado
         self._volumen = 1
         self._control = None
-        self._numTV +=1
+        self._numTV += 1
 
     def enlazar(self, control):
         self._control = control
@@ -16,7 +16,7 @@ class TV:
     def getMarca(self):
         return self._marca
     def setMarca(self, marca):
-        self.marca = marca
+        self._marca = marca
 
     def getCanal(self):
         return self._canal

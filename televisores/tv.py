@@ -1,12 +1,12 @@
 class TV:
     _numTV = 0
-    def __init__(self, marca, estado = False, canal = 1, precio = 500, volumen = 1, control = None):
+    def __init__(self, marca, estado):
         self._marca = marca
-        self._canal = canal 
-        self._precio = precio
+        self._canal = 1 
+        self._precio = 500
         self._estado = estado
-        self._volumen = volumen
-        self._control = control
+        self._volumen = 1
+        self._control = None
         self._numTV +=1
 
     def enlazar(self, control):
